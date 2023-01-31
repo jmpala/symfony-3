@@ -60,3 +60,7 @@ This library is used to work with DBs
 ## Controller
 
 - As parameter: wildcards, autowired services, entities and request object
+
+## Libraries
+
+- stof/doctrine-extensions-bundle (for timestampable and other functionalities)
