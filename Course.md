@@ -10,9 +10,10 @@ This library is used to work with DBs
 
 ## Entities
 
-- to create an entity "php bin/console make:entity"
+[- to create an entity "php bin/console make:entity"
 - we can set the table name "#[ORM\Table(name: 'vinyl_mix')]", but not needed. Doctrine will use the entity name
-
+- We can "DI" an Entity into a Controller, with a matching to entity id wildcard as url slug, and Doctrine will find it
+]()
 ## Migrations
 
 - we make a migration with "php bin/console make:migration"
@@ -42,3 +43,13 @@ This library is used to work with DBs
 ## Other
 
 - Services vs Data Classes
+- Is important to define the database version in Symfony, so Doctrine can use new features
+
+## Handling error pages
+
+- In order to display error pages, we need to throw an exception. This will fire the logger, and the error page will be displayed
+- "throw $this->createNotFoundException();" or "throw new NotFoundHttpException();" (both are equal)
+
+## Controller
+
+- As parameter: wildcards, autowired services, entities and request object
