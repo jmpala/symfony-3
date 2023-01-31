@@ -64,3 +64,4 @@ This library is used to work with DBs
 ## Libraries
 
 - stof/doctrine-extensions-bundle (for timestampable and other functionalities)
+- doctrine/doctrine-fixtures-bundle (gives a command to load fixtures)
