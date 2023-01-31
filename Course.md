@@ -65,3 +65,4 @@ This library is used to work with DBs
 
 - stof/doctrine-extensions-bundle (for timestampable and other functionalities)
 - doctrine/doctrine-fixtures-bundle (gives a command to load fixtures)
+- zenstruck/foundry (to create factories for entities and populate the DB with them)
