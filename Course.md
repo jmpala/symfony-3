@@ -44,11 +44,18 @@ This library is used to work with DBs
 
 - Services vs Data Classes
 - Is important to define the database version in Symfony, so Doctrine can use new features
+- Entities with only getters and setters are called anemic models
+- Entities with more logic are called rich models
 
 ## Handling error pages
 
 - In order to display error pages, we need to throw an exception. This will fire the logger, and the error page will be displayed
 - "throw $this->createNotFoundException();" or "throw new NotFoundHttpException();" (both are equal)
+
+## Flash Messages
+
+- Are messages saved into the session, and displayed once
+- after displaying, they are removed from the session
 
 ## Controller
 
